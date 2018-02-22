@@ -77,7 +77,9 @@ GWAS heritability $<$  genomic heritability  $\leq$ trait heritability
 <img src="nakayaIsobe.png" width=600 height=400><p><a href="https://academic.oup.com/aob/article/110/6/1303/110713"> Nakaya and Isobe (2012)</a>
 </div>
 
-
+---
+# Genomic Selection Procedure in Crop Breeding
+![](gs-maize.png)
 
 ---
 # How to fit all SNPs simultaneously?
