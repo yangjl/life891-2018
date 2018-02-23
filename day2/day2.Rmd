@@ -1,7 +1,7 @@
 ---
 title: "Genomic prediction"
 subtitle: "LIFE 891-002 Integrating Quantitative and Computational Biology into Life Sciences Research"
-author: "Gota Morota"
+author: "Gota Morota (Guest Lecture: Jinliang Yang)"
 date: "2018/02/23"
 output:
   xaringan::moon_reader:
@@ -16,9 +16,32 @@ options(htmltools.dir.version = FALSE)
 ```
 
 
+# What is Genomic Prediction?
 
+- Saliva => Wellness Report (from 23andMe)
 
+<div align="center">
+<img src="https://i.imgur.com/N2mefQ3.png">
+</div>
 
+---
+# What is Genomic Prediction?
+
+- Maize Kernels => Grain Yield 
+
+<div align="center">
+<img src="https://i.imgur.com/207NNmR.png" width=400 height=283>
+</div>
+
+---
+# Genomic Prediction in Crop Breeding
+![](gs-maize.png)
+
+--
+
+It saves time, money and gives more reliable results.
+
+---
 # GWAS vs. Prediction
 ![](https://upload.wikimedia.org/wikipedia/commons/1/12/Manhattan_Plot.png)
 .right[[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Manhattan_Plot.png)]
@@ -77,9 +100,7 @@ GWAS heritability $<$  genomic heritability  $\leq$ trait heritability
 <img src="nakayaIsobe.png" width=600 height=400><p><a href="https://academic.oup.com/aob/article/110/6/1303/110713"> Nakaya and Isobe (2012)</a>
 </div>
 
----
-# Genomic Selection Procedure in Crop Breeding
-![](gs-maize.png)
+
 
 ---
 # How to fit all SNPs simultaneously?
@@ -148,7 +169,7 @@ BLUP(\hat{\mathbf{g}}) &= E(\mathbf{g}|\mathbf{y}) = E[\mathbf{g}] + Cov(\mathbf
 \end{align}
 assuming that $\mathbf{WW'}$ is invertible
 
-- $Cov(\mathbf{W}) = \mathbf{WW'}$  is a covariance matrix of marker genotypes (provided that $X$ is centered), often considered to be the simplest form of additive genomic relationship kernel, $\mathbf{G}$. 
+- $Cov(\mathbf{W}) = \mathbf{WW'}$  is a covariance matrix of marker genotypes (provided that $W$ is centered), often considered to be the simplest form of additive genomic relationship kernel, $\mathbf{G}$. 
 
 
 ---

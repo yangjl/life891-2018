@@ -18,7 +18,7 @@ The genotype data set is provided in the PLINK format. We will use the `read_ped
 ```{r eval=FALSE, echo=TRUE}
 # install.packages("BGLR")
 library(BGLR)
-out<- read_ped("../../STAT892/data/Genotypes/sativas413.ped")
+out<- read_ped("../data/sativas413.ped")
 p=out$p
 n=out$n
 out=out$x
@@ -38,7 +38,7 @@ dim(W) # # 413 x 36901
 The accession IDs (individual IDs) are included in `.fam` file. 
 ```{r eval=FALSE}
 # accession ID
-fam <-read.table("../../STAT892/data/Genotypes/sativas413.fam", header = FALSE, stringsAsFactors = FALSE)  
+fam <-read.table("../data/sativas413.fam", header = FALSE, stringsAsFactors = FALSE)  
 head(fam)
 rownames(W) <- fam$V2 # 413 x 36901
 ```
@@ -154,7 +154,6 @@ for (i in 1:3){
 }
 mean(r2) 
 ```
-
 
 
 

@@ -3,7 +3,7 @@
   <head>
     <title>Genomic prediction</title>
     <meta charset="utf-8">
-    <meta name="author" content="Gota Morota" />
+    <meta name="author" content="Gota Morota (Guest Lecture: Jinliang Yang)" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
   </head>
@@ -13,7 +13,7 @@ class: center, middle, inverse, title-slide
 
 # Genomic prediction
 ## LIFE 891-002 Integrating Quantitative and Computational Biology into Life Sciences Research
-### Gota Morota
+### Gota Morota (Guest Lecture: Jinliang Yang)
 ### 2018/02/23
 
 ---
@@ -22,9 +22,32 @@ class: center, middle, inverse, title-slide
 
 
 
+# What is Genomic Prediction?
 
+- Saliva =&gt; Wellness Report (from 23andMe)
 
+&lt;div align="center"&gt;
+&lt;img src="https://i.imgur.com/N2mefQ3.png"&gt;
+&lt;/div&gt;
 
+---
+# What is Genomic Prediction?
+
+- Maize Kernels =&gt; Grain Yield 
+
+&lt;div align="center"&gt;
+&lt;img src="https://i.imgur.com/207NNmR.png" width=400 height=283&gt;
+&lt;/div&gt;
+
+---
+# Genomic Prediction in Crop Breeding
+![](gs-maize.png)
+
+--
+
+It saves time, money and gives more reliable results.
+
+---
 # GWAS vs. Prediction
 ![](https://upload.wikimedia.org/wikipedia/commons/1/12/Manhattan_Plot.png)
 .right[[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Manhattan_Plot.png)]
@@ -83,9 +106,7 @@ GWAS heritability `\(&lt;\)`  genomic heritability  `\(\leq\)` trait heritabilit
 &lt;img src="nakayaIsobe.png" width=600 height=400&gt;&lt;p&gt;&lt;a href="https://academic.oup.com/aob/article/110/6/1303/110713"&gt; Nakaya and Isobe (2012)&lt;/a&gt;
 &lt;/div&gt;
 
----
-# Genomic Selection Procedure in Crop Breeding
-![](gs-maize.png)
+
 
 ---
 # How to fit all SNPs simultaneously?
@@ -154,7 +175,7 @@ BLUP(\hat{\mathbf{g}}) &amp;= E(\mathbf{g}|\mathbf{y}) = E[\mathbf{g}] + Cov(\ma
 \end{align}`
 assuming that `\(\mathbf{WW'}\)` is invertible
 
-- `\(Cov(\mathbf{W}) = \mathbf{WW'}\)`  is a covariance matrix of marker genotypes (provided that `\(X\)` is centered), often considered to be the simplest form of additive genomic relationship kernel, `\(\mathbf{G}\)`. 
+- `\(Cov(\mathbf{W}) = \mathbf{WW'}\)`  is a covariance matrix of marker genotypes (provided that `\(W\)` is centered), often considered to be the simplest form of additive genomic relationship kernel, `\(\mathbf{G}\)`. 
 
 
 ---
